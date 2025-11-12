@@ -120,3 +120,19 @@ if submitted:
     st.caption("توضیح: برای هزینهٔ قابل پرداخت، مقدار تلاش‌های مورد نیاز به بالا گرد می‌شود (ceil). "
                "مثلاً اگر انتظار ریاضی 1.44 تلاش باشد، شما باید 2 تلاش بخرید؛ بنابراین هزینه برابر 2×Fee خواهد بود.")
 
+
+    # =======================
+    # 🌐 Clickable Image
+    # =======================
+    image_url = "https://i.postimg.cc/dVmcGc0j/ytchannel.jpg"
+    link_url = "https://www.youtube.com/@zareii.Abbass/videos"
+
+    st.markdown(
+        f"""
+        <a href="{link_url}" target="_blank">
+            <img src="{image_url}" width="400" style="display:block; margin:auto;">
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
+
