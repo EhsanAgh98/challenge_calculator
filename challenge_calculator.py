@@ -5,7 +5,7 @@ import math
 st.set_page_config(page_title="Prop Challenge Calculator", layout="centered")
 
 st.title("Prop Firm Challenge Calculator")
-st.caption("شبیه‌ساز احتمال پاس شدن چالش پراپ — بدون گراف")
+st.caption("Prop Challenge Pass Probability Simulator")
 
 # ---- ورودی‌ها ----
 with st.form("inputs"):
@@ -110,12 +110,13 @@ if submitted:
         expected_attempts = 1.0 / pass_rate
         attempts_ceil = math.ceil(expected_attempts)  # سقف گرفته می‌شود
         total_cost_ceil = attempts_ceil * challenge_fee
-        st.markdown(f"- 🔁 **تعداد تلاش مورد انتظار (ریاضی):** `{expected_attempts:.2f}`")
-        st.markdown(f"- 🔼 **تعداد تلاش خریدنی (سقف گرفته شده):** `{attempts_ceil}`")
-        st.markdown(f"- 💰 **هزینهٔ قابل پرداخت (سقف ضرب هزینه):** `${total_cost_ceil:,.0f}`")
+        st.markdown(f"- 🔁 **تعداد تلاش مورد انتظار :** `{expected_attempts:.2f}`")
+        st.markdown(f"- 🔼 **تعداد تلاش خریدنی :** `{attempts_ceil}`")
+        st.markdown(f"- 💰 **هزینهٔ قابل پرداخت :** `${total_cost_ceil:,.0f}`")
     else:
         st.markdown("- ⚠️ با این پارامترها احتمال پاس صفر است؛ نیاز به تغییر ورودی‌ها دارید.")
 
     st.markdown("---")
     st.caption("توضیح: برای هزینهٔ قابل پرداخت، مقدار تلاش‌های مورد نیاز به بالا گرد می‌شود (ceil). "
                "مثلاً اگر انتظار ریاضی 1.44 تلاش باشد، شما باید 2 تلاش بخرید؛ بنابراین هزینه برابر 2×Fee خواهد بود.")
+
