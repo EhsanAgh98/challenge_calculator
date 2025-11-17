@@ -15,8 +15,8 @@ st.caption("Prop Challenge Pass Probability Simulator")
 # تنظیمات ارسال به Google Form
 # -------------------------
 # ترتیب اولویت: 1) st.secrets  2) متغیر محیطی
-GOOGLE_FORM_URL = https://docs.google.com/forms/d/e/1FAIpQLScwNWacQiu2s5bu8TsvziRz3kRxI9i_I6PbOkP2TIc8066blQ/formResponse
-GOOGLE_ENTRY_EMAIL = entry.735185534
+GOOGLE_FORM_URL = None
+GOOGLE_ENTRY_EMAIL = None
 
 if "GOOGLE_FORM_URL" in st.secrets:
     GOOGLE_FORM_URL = st.secrets["GOOGLE_FORM_URL"]
@@ -175,3 +175,4 @@ if submitted:
 
     st.markdown("---")
     st.caption("توضیح: برای هزینهٔ قابل پرداخت، مقدار تلاش‌های مورد نیاز به بالا گرد می‌شود (ceil).")
+
