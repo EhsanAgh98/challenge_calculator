@@ -137,9 +137,9 @@ if submitted:
     # ارسال به Google Form
     success, error = submit_email_to_google_form(email, extra=f"winrate={win_rate},rr={risk_reward}")
     if success:
-        st.success("ایمیل شما با موفقیت ثبت شد ✅ (از طریق Google Form)")
+        st.success("ایمیل شما با موفقیت ثبت شد ✅ ")
     else:
-        st.warning(f"ثبت ایمیل در Google Form با مشکل مواجه شد: {error}\nاما شبیه‌سازی ادامه می‌یابد.")
+        st.warning(f"ثبت ایمیل با مشکل مواجه شد: {error}\nاما شبیه‌سازی ادامه می‌یابد.")
 
     # ادامهٔ نمایش شبیه‌سازی (همان قبلی)
     st.write("درحال اجرا... (صبر کنید تا شبیه‌سازی تمام شود)")
@@ -175,4 +175,5 @@ if submitted:
 
     st.markdown("---")
     st.caption("توضیح: برای هزینهٔ قابل پرداخت، مقدار تلاش‌های مورد نیاز به بالا گرد می‌شود (ceil).")
+
 
