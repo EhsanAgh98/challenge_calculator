@@ -177,3 +177,18 @@ if submitted:
     st.caption("توضیح: برای هزینهٔ قابل پرداخت، مقدار تلاش‌های مورد نیاز به بالا گرد می‌شود (ceil).")
 
 
+
+    # =======================
+    # 🌐 Clickable Image
+    # =======================
+    image_url = "https://i.postimg.cc/dVmcGc0j/ytchannel.jpg"
+    link_url = "https://www.youtube.com/@zareii.Abbass/videos"
+
+    st.markdown(
+        f"""
+        <a href="{link_url}" target="_blank">
+            <img src="{image_url}" width="400" style="display:block; margin:auto;">
+        </a>
+        """,
+        unsafe_allow_html=True
+    )
